@@ -1,0 +1,44 @@
+.sidebar {
+  position: fixed;
+  top: 60px; /* Offset for header */
+  left: -200px;
+  width: 200px;
+  height: calc(100% - 60px);
+  background: #f0f0f0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 2000;
+  padding-top: 20px;
+  border-radius: 0 8px 8px 0;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 12px 10px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+}
+
+.sidebar ul li:hover {
+  background-color: #dedede;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.15);
+  z-index: 1000;
+}

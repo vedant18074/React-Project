@@ -1,0 +1,107 @@
+/* Background */
+.login-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Card box */
+.login-card {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title and subtitle */
+.login-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-card p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form fields */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  outline: none;
+  transition: 0.2s border-color ease;
+}
+
+.login-form input:focus {
+  border-color: #4facfe;
+}
+
+/* Login button */
+.login-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4facfe;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #00c6ff;
+}
+
+/* Register link */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #4facfe;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Back to Home button */
+.back-home-btn {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  color: #4facfe;
+  border: 1px solid #4facfe;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #4facfe;
+  color: white;
+}

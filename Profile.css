@@ -1,0 +1,122 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassy card style */
+.profile-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  text-align: left;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.profile-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 6px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.profile-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.profile-card input,
+.profile-card textarea {
+  padding: 12px;
+  border: 1px solid rgba(204, 204, 204, 0.7);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.profile-card textarea {
+  resize: none;
+  min-height: 80px;
+}
+
+.profile-card input:focus,
+.profile-card textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+.profile-card button {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+}
+
+.profile-card button:hover {
+  background: linear-gradient(90deg, #3a8edb, #00c6fb);
+  box-shadow: 0 6px 14px rgba(58, 142, 219, 0.5);
+  transform: translateY(-2px);
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 14px;
+  border: 1px solid #4facfe;
+  border-radius: 8px;
+  color: #4facfe;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.back-home:hover {
+  background: #4facfe;
+  color: white;
+  box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

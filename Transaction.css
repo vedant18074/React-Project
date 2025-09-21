@@ -1,0 +1,120 @@
+.transaction-history-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search & Filter controls */
+.transaction-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.transaction-search,
+.transaction-filter {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.transaction-search:focus,
+.transaction-filter:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.transaction-table-wrapper {
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.transaction-table thead {
+  background: #4a90e2;
+  color: white;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.transaction-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s ease-in-out;
+}
+
+.transaction-table tbody tr:hover {
+  background: #f4f8ff;
+}
+
+.transaction-table td:nth-child(4) {
+  font-weight: bold;
+  color: #2d7a2d; /* Green for positive numbers */
+}
+
+.transaction-table td:nth-child(5) {
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .transaction-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .transaction-table thead {
+    display: none;
+  }
+
+  .transaction-table,
+  .transaction-table tbody,
+  .transaction-table tr,
+  .transaction-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .transaction-table tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .transaction-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .transaction-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #555;
+  }
+}
